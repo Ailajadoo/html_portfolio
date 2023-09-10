@@ -1,0 +1,20 @@
+html{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+}
+div{
+    margin-top: 50px;
+    margin-left:25%;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+#image{
+    border: 5px solid white;
+    width: 100%;
+}
