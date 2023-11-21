@@ -1,245 +1,120 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link href="./memepage/style.css" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Caveat&family=Libre+Baskerville&family=Quicksand:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Caveat&family=Libre+Baskerville&family=Quicksand:wght@300&family=bebasanji&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <style>
-        .bebas {
-            font-family: 'Architects Daughter', cursive;
-            font-family: 'Bebas Neue', sans-serif;
-            font-family: 'Caveat', cursive;
-            font-family: 'Libre Baskerville', serif;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: bolder;
-        }
-
-        .skr {
-            font-family: 'Architects Daughter', cursive;
-            font-family: 'Bebas Neue', sans-serif;
-            font-family: 'Caveat', cursive;
-            font-family: 'Libre Baskerville', serif;
-            font-family: 'Quicksand', sans-serif;
-            font-family: 'Skranji', cursive;
-        }
-        .caveat{
-            font-family: 'Caveat', cursive;
-            font-weight: bolder;
-            font-size: xx-large;
-        }
-        .py{
-            background-color: rgb(239, 238, 226);
-        }
-        .small{
-            font-size: large;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Shery js -->
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+  <!-- locomotive js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <!-- Bootstrap here -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- CSS is here  -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Icon CDN here -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
-<body class="py">
-    <!-- navigation bar -->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href=""
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./assets/images/me.jpeg" height="50px">
-                <span class="fs-4">
-                    <h1>Kaushik Vishwakarma</h1>
-                </span>
-            </a>
+<body>
+  <div id="main">
+    <div id="home">
+      <!-- navigation bar settings -->
+      <div id="nav">
+        <div id="nleft">
+          <a class="nlink" href="#">Home</a>
+          <a class="nlink" href="#">Pricing</a>
+          <a class="nlink" href="#">Products</a>
+        </div>
+        <a class="nlink" id="centeratag" href="#">Kaushik Vishwakarma</a>
+        <div id="nright">
+          <a class="nlink" href="#">Our Journey</a>
+        </div>
+      </div>
+      <div id="hero">
+        <div class="anim2" id="sustain">
+          <h5>01.</h5>
+          <h4>Sustainability.</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <div class="imgeff" id="susimagewrapper">
+            <img src="./images/pinkgreenplant.jpg" alt="pinkgreenplant">
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="./The Simon game/simon.html" class="nav-link">Simon Game</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </header>
-    </div>
-    <h1 style="font-weight: bold; text-align: center; color: red; background-color: yellow;">The website is still in
-        development,some feature may not work properly or totaly</h1>
-    <!-- Summary  -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="./assets/images/gow.jpg" height="250px" alt="Bootstrap Themes" 
-                    loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Summary</h1>
-                <p class="lead bebas small"> I am a Web developer,a Game dev with 0 month of experience and having 0 month
-                    experience in 3d model
-                    artist(Blender) .I am a hardworking and dedicated individual in client service and administration
-                </p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
+          </div>
         </div>
-    </div>
-    <!-- Educatoin department -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="https://th.bing.com/th/id/OIP.Bo-HRLoEO0ahTTDr8CbpLwHaGe?pid=ImgDet&rs=1"  alt="Bootstrap Themes" 
-                    height="300px" loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Education</h1>
-                <p class="lead bebas"><ul class="bebas">
-                    <li>Completed my 12th standard from Lolipop Public School-Card board(Harder than CBSE board)(2021-2022)</li>
-                    <li>Currently persuading B.Tech in Artificial Intelligence and Data Science with an Organised institution </li>
-                </ul></p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
+        <div class="anim2" id="ephemeral">
+          <div id="headings">
+            <h1>Ephemeral</h1>
+            <h1>Equilibrium.</h1>
+          </div>
+          <div id="imgntext">
+            <img src="./images/pinkplant.jpg" alt="">
+            <p>
+              Commited to Sustainability and Eco-friendly choices for a better tomorrow.</p>
+          </div>
         </div>
-    </div>
-    <!-- Work experience  -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="https://oodlesof.info/wp-content/uploads/2018/01/work-experience-800px.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Work Experience</h1>
-                <p class="lead bebas"><ul class="bebas">
-                    <li>
-                        <h3 class="bebas">Freelancer</h3>
-                    </li>
-                    June 2022-Jan 2023
-                    <br>
-                    <ul >
-                        <li>Worked as a Freelancer for many client for providing something usefull</li>
-                    </ul>
-                </ul></p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
+        <div class="anim2" id="visit">
+          <div id="circlev">
+            <i class="ri-arrow-down-line"></i>
+          </div>
+          <h5>Visit Our Galary.</h5>
         </div>
+      </div> 
     </div>
-    <!-- Skills -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="https://thumbs.dreamstime.com/b/design-concept-word-skill-website-banner-143236143.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Skills</h1>
-                <p class="lead bebas">
-                    <ul class="lead bebas">
-                        <li class="lead bebas">Client service⭐⭐⭐⭐</li>
-                        <li class="lead bebas">Team work⭐⭐⭐⭐⭐</li>
-                    </ul>
-                </p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
+    <div id="motive">
+      <h4>Our Motive</h4>
+
+      <p>At Sheryians, we are deeply committed to sustainability. We believe in a
+        greener, more sustainable future,<span id="one"></span>and it's at the core of everything we
+        do. Our practices are designed with environmental <span id="two"></span>responsibility
+        in mind , from sourcing eco-friendly <span id="three"></span> materials to reducing our carbon
+        footprint.</p>
+    </div>
+    <div id="pictures">
+      <div id="firstpic">
+        <div class="imgeff" id="picimg">
+          <img src="./images/sea.jpg" alt="sea image">
         </div>
-    </div>
-    <!-- Awards and Certifications -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="https://th.bing.com/th/id/OIP.Ks-EA-eQavA85FEx146yMwHaEv?pid=ImgDet&rs=1" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Awards And Certifications</h1>
-                <p class="lead bebas">
-                    <ul class="lead bebas">
-                        <li class="lead bebas">NCC Certification</li>
-                        <li class="lead bebas">Employee of the month-ABC Inc.(Augest 20XX)</li>
-                    </ul>
-                </p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
+        <h1>Synergy</h1>
+        <p>Commited to sustainability,eco-friendly choices for a better tomorrow.</p>
+      </div>
+      <div id="secpic">
+      <div class="imgeff" id="picimg">
+          <img src="./images/cloud.jpg" alt="sea image">
         </div>
+        <h1>Harmony.</h1>
+        <p>Commited to sustainability,eco-friendly choices for a better tomorrow.</p>
+      </div>
     </div>
-    <!-- other links -->
-    <div class="container col-xxl-8 px-4 py-5 center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="https://th.bing.com/th/id/OIP.xbnlewO92K45CPM_22336wHaCt?pid=ImgDet&rs=1" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                    height="500" loading="lazy">
-                
-            </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 bebas ">Other Links</h1>
-                <p class="lead bebas">
-                    <ul class="bebas">
-                        <li><a href="./public/about.html">About me </a></li>
-                        <li><a href="./public/contact.html">Contact Me</a></li>
-                        <li><a href="./memepage/memepage.html">click here for memepage</a></li>
-                    </ul>
-                </p>
-                <!-- buttons -->
-                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-                </div> -->
-            </div>
-        </div>
+    <div id="banner">
+      <div id="bimg">
+        <img src="./images/bottle.jpg" alt="bottleimg">
+        <img src="./images/bottle2.jpg" alt="bottleimg">
+      </div>
+      <div id="btext">
+        <h1>Biodegradable</h1>
+        <h1>Packaging</h1>
+        <p>Committed to sustainability,eco-friendly choices for a better tomorrow. </p>
+      </div>
     </div>
-    <footer>
-        <p>© Kaushik Vishwakarma. All rights reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <div id="future">
+      <video src="./images/back.mp4" loop autoplay muted></video>
+      <div id="ftext">
+        <h1>Think of Future</h1>
+        <Button>join the movement</Button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+  <script src="script.js"></script>
 </body>
+
+</html>
